@@ -7,6 +7,7 @@ public class Taxi {
   int id;
   double lng;
   double lat;
+  Kind kind = Kind.MEDIUM;
 
   @AvroDefault("false")
   boolean dispatchable;
