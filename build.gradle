@@ -15,8 +15,9 @@ dependencies {
     compile 'org.apache.kafka:kafka-streams:1.1.0'
     compile "org.apache.avro:avro:1.8.2"
     compile "io.confluent:kafka-schema-registry:4.0.0"
+
+    compile 'io.confluent:kafka-avro-serializer:4.0.0'          // 이 프로젝트의 주요관심사
     compile 'io.confluent:kafka-streams-avro-serde:4.0.0'
-    compile 'io.confluent:kafka-avro-serializer:4.0.0'
 
 
     compile group: 'org.json', name: 'json', version: '20180130'

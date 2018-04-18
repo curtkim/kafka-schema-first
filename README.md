@@ -40,3 +40,15 @@
     kafka-music-charts-top-five-songs-by-genre-repartition-value
     kafka-music-charts-all-songs-changelog-value
     kafka-music-charts-KSTREAM-MAP-0000000004-repartition-value
+
+- subject가 있고 schema가 있음
+- subject에는 version이 여러개 있고
+- 하나의 version은 schema id를 가지고 있음
+
+    /subjects/play-events-value/versions/1
+    {
+      subject: "play-events-value",
+      version: 1,
+      id: 2,
+      schema: "{"type":"record","name":"PlayEvent","namespace":"io.confluent.examples.streams.avro","fields":[{"name":"song_id","type":"long"},{"name":"duration","type":"long"}]}"
+    }
